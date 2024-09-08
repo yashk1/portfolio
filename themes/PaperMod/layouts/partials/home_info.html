@@ -4,10 +4,26 @@
         <h1>{{ .Title | markdownify }}</h1>
     </header>
     <div class="entry-content">
-        <p>{{ .Content | markdownify }}</p>
+        {{ .Content | markdownify }}
     </div>
     <footer class="entry-footer">
-        {{ partial "social_icons.html" site.Params.socialIcons }}
+        {{- with .buttons }}
+        <div class="buttons">
+            {{- range . }}
+            <a class="button" href="{{ .url | absURL }}" {{ if .target }}target="{{ .target }}" {{ end }}>
+                <span class="button-inner">{{ .name }}</span>
+            </a>
+            {{- end }}
+        </div>
+        {{- end }}
+        <div class="social-icons">
+            {{- range site.Params.socialIcons }}
+            <a href="{{ trim .url " " | safeURL }}" target="blank" rel="noopener noreferrer me"
+                title="{{ .name | title }}">
+                {{ partial "svg.html" . }}
+            </a>
+            {{- end }}
+        </div>
     </footer>
 </article>
-{{- end -}}
+{{- end }}
