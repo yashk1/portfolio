@@ -1,17 +1,18 @@
 ---
-title: "I passed the AWS DVA Certification Exam"
+title: "Perfections kills progress"
 
-description: "How I passed the AWS Developer - Associate Certification Exam (DVA-C02)"
+description: "First blog. No agenda just straight thoughts"
 
-dateString: Mar 2023
+dateString: Sept 2024
 
 draft: false
 
-tags: ["AWS", "DVA", "Certification", "Developer", "Developer Associate"]
+tags: 
 
 weight: 101
 
-cover:
-
-image: "/blog/aws-dva-certification/cover.jpg"
 ---
+
+"I can't show my portfolio untit it's done and have all my projects." 
+
+I have said that thing for over a year and that's one  exmaple of how perfection stops you from making progress. But finallly it's about time where I have adopted the approach of making iterative progress over perfection and this is a sign of it.
