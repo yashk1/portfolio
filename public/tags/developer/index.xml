@@ -8,10 +8,10 @@
     <language>en-us</language><atom:link href="http://localhost:1313/tags/developer/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>I passed the AWS DVA Certification Exam</title>
-      <link>http://localhost:1313/blog/aws-dva-certification/</link>
+      <link>http://localhost:1313/blog/test/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/blog/aws-dva-certification/</guid>
+      <guid>http://localhost:1313/blog/test/</guid>
       <description>How I passed the AWS Developer - Associate Certification Exam (DVA-C02)</description>
     </item>
     

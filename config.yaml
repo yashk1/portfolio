@@ -3,81 +3,127 @@ languageCode: en-us
 title: Abdur Rahman
 theme: PaperMod
 
-menu:
-  main:
-    - identifier: home
-      name: Home
-      url: /
-      weight: 10
-    - identifier: blog
-      name: Blog
-      url: /blog
-      weight: 20
-    - identifier: projects
-      name: Projects
-      url: /projects
-      weight: 30
-    - identifier: experience
-      name: Experience
-      url: /experience
-      weight: 40
-    - identifier: search
-      name: Search
-      url: /search
-      weight: 50
-    # - identifier: tags
-    #   name: Tags
-    #   url: /tags
-    #   weight: 60
-    # - identifier: notes
-    #   name: Notes
-    #   url: https://notes.arkalim.org
-    #   weight: 70
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+# googleAnalytics: UA-123-45
+
+minify:
+  disableXML: true
+  minifyOutput: true
 
 params:
-  # theme
-  showToc: true
-  TocOpen: false
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: Delhi Data Guy
+  description: "k"
+  keywords: [Blog, Portfolio, Data Science]
+  author: Yash Sharma
+  # author: ["Me", "You"] # multiple authors
+  # images: ["<link or path of image for opengraph, twitter-cards>"]
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
   ShowBreadCrumbs: true
-  ShowCodeCopyButtons: true
-  hideMeta: false
+  ShowCodeCopyButtons: false
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
 
-  # for enchanced SEO
-  env: production
+  assets:
+    favicon: "favicon.ico"
+    favicon16x16: "favicon-16x16.png"
+    favicon32x32: "favicon-32x32.png"
+    apple_touch_icon: "apple-touch-icon.png"
+    safari_pinned_tab: "safari-pinned-tab.svg"
 
-  # Home Page
-  profileMode:
-    enabled: true
-    title: "Abdur Rahman"
-    subtitle: Hi 👋 I'm Abdur, a tech enthusiast who loves solving complex problems. As a Software Developer in the Backend Infrastructure team at [**Clio**](https://www.clio.com), I'm building robust systems to transform the legal experience for all. By evening, you can find me pushing the limits of my strength at the gym or whipping up my favorite recipe in the kitchen. Let's connect and create something awesome together!
+  label:
+    text: "Delhi Data Guy"
+    # icon: "images/coding.png"
+    iconHeight: 35
 
- 
-    imageUrl: "home/casual-small-square.jpeg"
-    imageWidth: 220
-    imageHeight: 220
-    # buttons:
-    #   - name: Resume
-    #     url: ""
+  # home-info mode
+  # https://sharmayash.netlify.app/
 
-  # List View
-  hideDescriptionInList: false
+  homeInfoParams:
+    Title: "Hello! I'm Yash Sharma👋"
+    Content: |
+      AKA **DelhiDataguy** on the internet. I'm a:
 
-  # cover image for posts
-  cover:
-    hiddenInList: false # hide on list pages and home
-    hiddenInSingle: false # hide on single page
+      1. **Data/BI Engineer**
+
+          with expertise in Data Engineering, Analytics, and Generative AI. My mission? Extracting and Transforming raw data into actionable insights that drive business decisions and innovation.
+
+        From crafting efficient data pipelines to developing AI-powered solutions, I'm dedicated to unlocking the full potential of data. With experience at industry leaders like PetSmart and USAA, I've:
+
+        1. Revolutionized reporting systems providing self-service insights
+        2. Created data models for cross-functional teams
+        3. Developed RAG Q&A systems to improve data accessibility and productivity
+
+
+      🎓 **Academic Background**
+
+      1. M.S. in Information systems - The University of Texas at Dallas
+      2. B.S. in Software Engineering - Delhi College of Engineering
+
+      🛠️ **Technical Toolkit**
+      1. Languages & Cloud: Python, SQL, PySpark, JavaScript, HTML, CSS; AWS, GCP, Databricks, Snowflake
+      2. Big Data & Orchestration: Apache Spark, Kafka, MLFlow, Dagster, Mage, DBT
+      3. Generative AI: OpenAI API, LLM, RAG, Vector Databases, Hugging Face, Transformers, PyTorch, FastAI, Langchain
+
+      🌱 **Beyond the Workspace**
+      1. Franchise Owner and Manager - Crossfit Industrious Ballard: 
+            
+            Balancing my tech career with my passion for fitness and entrepreneurship.
+    buttons:
+      - name: Blog
+        url: "/blog"  # Updated URL to point to the correct blog path
+      - name: Projects
+        url: "/projects"
+      - name: Resume
+        url: "/documents/resume.pdf"
+        target: "_blank"
+
+  showRecentItems: 5
+  showRecentProjects: true
 
   socialIcons:
-    - name: "email"
-      url: "mailto:abdur.rahman.kalim@gmail.com"
-    - name: "linkedin"
-      url: "https://www.linkedin.com/in/abdurrahmankalim"
-    - name: "github"
-      url: "https://github.com/arkalim"
-    - name: "youtube"
-      url: "https://www.youtube.com/c/AbdurRahmanKalim"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/yashk1/"
+    - name: github
+      url: "https://github.com/yashk1"
 
-  # text search
+  analytics:
+    google:
+      SiteVerificationTag: "XYZabc"
+    bing:
+      SiteVerificationTag: "XYZabc"
+    yandex:
+      SiteVerificationTag: "XYZabc"
+
+  cover:
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: false # hide on single page
+
+  editPost:
+    # URL: "https://github.com/chanin-www/content"
+    # Text: "Suggest Changes" # edit text
+    URL: ""
+    Text: "" # edit text
+    appendFilePath: true # to append file path to Edit link
+
+  # for search
+  # https://fusejs.io/api/options.html
   fuseOpts:
     isCaseSensitive: false
     shouldSort: true
@@ -87,15 +133,17 @@ params:
     minMatchCharLength: 0
     keys: ["title", "permalink", "summary", "content"]
 
-# for search using Fuse.js
-outputs:
-  home:
-    - HTML
-    - RSS
-    - JSON
-
-# allow HTML in MD
-markup:
-  goldmark:
-    renderer:
-      unsafe: true
+menu:
+  main:
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 4
+    - identifier: blog
+      name: Blog
+      url: /blog/
+      weight: 1
+    - identifier: projects
+      name: Projects
+      url: /projects/
+      weight: 2
