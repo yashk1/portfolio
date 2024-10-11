@@ -2,6 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/blog/de-zoomcamp-1/</loc>
+  </url><url>
     <loc>http://localhost:1313/blog/test/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/bigquery/</loc>
@@ -44,6 +46,14 @@
   </url><url>
     <loc>http://localhost:1313/blog/</loc>
   </url><url>
+    <loc>http://localhost:1313/tags/docker/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/python/</loc>
+  </url><url>
     <loc>http://localhost:1313/search/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/sql/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/terraform/</loc>
   </url>
 </urlset>
